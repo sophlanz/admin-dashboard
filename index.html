@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <script src ="index.js"defer></script>
+    <title>admin-dashboard</title>
+</head>
+<body>
+    <div id = "sidebar">
+        <div id = "title">
+            <svg style="width:45px;height:45px" viewBox="0 0 24 24">
+                <path fill="#240e8b" d="M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,2L14.39,5.42C13.65,5.15 12.84,5 12,5C11.16,5 10.35,5.15 9.61,5.42L12,2M3.34,7L7.5,6.65C6.9,7.16 6.36,7.78 5.94,8.5C5.5,9.24 5.25,10 5.11,10.79L3.34,7M3.36,17L5.12,13.23C5.26,14 5.53,14.78 5.95,15.5C6.37,16.24 6.91,16.86 7.5,17.37L3.36,17M20.65,7L18.88,10.79C18.74,10 18.47,9.23 18.05,8.5C17.63,7.78 17.1,7.15 16.5,6.64L20.65,7M20.64,17L16.5,17.36C17.09,16.85 17.62,16.22 18.04,15.5C18.46,14.77 18.73,14 18.87,13.21L20.64,17M12,22L9.59,18.56C10.33,18.83 11.14,19 12,19C12.82,19 13.63,18.83 14.37,18.56L12,22Z" />
+            </svg>
+            <img > <h1 class = "dashboard">Dashboard</h1>
+        </div>
+        
+        <div class = "controls">
+            <ul>
+                <div id = "label">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="#240e8b" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
+                </svg>
+                <li id = "home"><a href= "#">Home</a></li>
+            </div>
+                <div id = "label">
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="#240e8b" d="M22,3H2C0.91,3.04 0.04,3.91 0,5V19C0.04,20.09 0.91,20.96 2,21H22C23.09,20.96 23.96,20.09 24,19V5C23.96,3.91 23.09,3.04 22,3M22,19H2V5H22V19M14,17V15.75C14,14.09 10.66,13.25 9,13.25C7.34,13.25 4,14.09 4,15.75V17H14M9,7A2.5,2.5 0 0,0 6.5,9.5A2.5,2.5 0 0,0 9,12A2.5,2.5 0 0,0 11.5,9.5A2.5,2.5 0 0,0 9,7M14,7V8H20V7H14M14,9V10H20V9H14M14,11V12H18V11H14" />
+                    </svg>
+                    <li id = "profile"><a href= "#">Profile</a></li>
+                </div>
+                <div id = "label">
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="#240e8b" d="M22,4C22,2.89 21.1,2 20,2H4A2,2 0 0,0 2,4V16A2,2 0 0,0 4,18H18L22,22V4Z" />
+                    </svg>
+                    <li id = "messages"><a href= "#">Messages</a></li>
+                </div>
+                <div id = "label">
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="#240e8b" d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M16.3 15.2L11 12.3V7H12.5V11.4L17 13.9L16.3 15.2Z" />
+                    </svg>
+                    <li id = "history"><a href= "#">History</a></li>
+                </div>
+                <div id = "label">
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="#240e8b" d="M4 7H2V21C2 22.1 2.9 23 4 23H18V21H4M20 3H16.8C16.4 1.8 15.3 1 14 1C12.7 1 11.6 1.8 11.2 3H8C6.9 3 6 3.9 6 5V17C6 18.1 6.9 19 8 19H20C21.1 19 22 18.1 22 17V5C22 3.9 21.1 3 20 3M14 3C14.6 3 15 3.5 15 4C15 4.5 14.5 5 14 5C13.5 5 13 4.5 13 4C13 3.5 13.4 3 14 3Z" />
+                    </svg>
+                    <li id = "tasks"><a href= "#">Tasks</a></li>
+                </div>
+                <div id = "label">
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="#240e8b" d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z" />
+                    </svg>
+                    <li id = "communities"><a href= "#">Communities</a></li>
+                </div>
+            </ul>
+        </div>
+        <div class = "settings">
+                <ul>
+                   <div id = "label">
+                         <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                            <path fill="#240e8b" d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" />
+                         </svg>
+                        <li><a href= "#">Settings</a></li>
+                   </div> 
+                   <div id = "label">
+                         <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                            <path fill="#240e8b" d="M12 2C11.5 2 11 2.19 10.59 2.59L2.59 10.59C1.8 11.37 1.8 12.63 2.59 13.41L10.59 21.41C11.37 22.2 12.63 22.2 13.41 21.41L21.41 13.41C22.2 12.63 22.2 11.37 21.41 10.59L13.41 2.59C13 2.19 12.5 2 12 2M12 6.95C14.7 7.06 15.87 9.78 14.28 11.81C13.86 12.31 13.19 12.64 12.85 13.07C12.5 13.5 12.5 14 12.5 14.5H11C11 13.65 11 12.94 11.35 12.44C11.68 11.94 12.35 11.64 12.77 11.31C14 10.18 13.68 8.59 12 8.46C11.18 8.46 10.5 9.13 10.5 9.97H9C9 8.3 10.35 6.95 12 6.95M11 15.5H12.5V17H11V15.5Z" />
+                         </svg>
+                        <li><a href= "#">Support</a></li>
+                   </div> 
+                   <div id = "label">
+                          <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                            <path fill="#240e8b" d="M12,12H19C18.47,16.11 15.72,19.78 12,20.92V12H5V6.3L12,3.19M12,1L3,5V11C3,16.55 6.84,21.73 12,23C17.16,21.73 21,16.55 21,11V5L12,1Z" />
+                          </svg>
+                        <li><a href= "#">Privacy</a></li>
+                   </div> 
+                </ul>
+        </div>
+    </div>
+
+
+    <div id= "header">
+        <div class = "nav">
+            <img>
+            <input type = "text" id = "searchBar" placeholder = "search...">
+            <img>
+            <img>
+            <p>Gautama Buddha</p>
+        </div>
+        <div class = "greeting">
+            <img>
+            <div class = "user-greeting">
+                <p>Hi there,</p>
+                <h2>Gautama Buddha</h2>
+            </div>
+        </div>
+        <div class = "btns">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+            
+        </div>
+    </div>
+   
+        <div class = "projects">
+            <h2>Your Projects</h2>
+            <div class="card1">
+                <h3>Super Cool Project</h3>
+                <p>Mauris vestibulum sem dui, quis elementum risus venenatis ac. Aenean dictum, arcu vel gravida tempus, sem lacus ultricies risus, eu ultrices lorem nisi ut justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla blandit nec lacus eget scelerisque.</p>
+
+            </div>
+            <div class="card2">
+                <h3>Less Cool Project</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et nisl at 
+                    nulla placerat aliquet in eu lectus. Duis bibendum venenatis ex, eget posuere 
+                    urna condimentum in.</p>
+                    <img><img><img>
+            </div>
+            <div class="card3">
+                <h3>Impossible App</h3>
+                <p> Nullam sed turpis arcu. Nunc vel dapibus magna. Suspendisse aliquet orci non metus lobortis, nec semper arcu tristique. Quisque volutpat orci non turpis ultricies, at elementum nisl pharetra.</p>
+                <img><img><img>
+            </div>
+            <div class="card4">
+                <h3>Easy Peasy App</h3>
+                <p> Sed gravida pretium odio sit amet venenatis. Proin risus felis, cursus sed vestibulum sit amet, varius et orci. Aliquam neque lectus, rutrum sit amet porta ac, fringilla eu augue</p>
+                <img><img><img>
+            </div>
+            <div class="card5">
+                <h3>Ad Blocker</h3>
+                <p>  Praesent augue arcu, tincidunt posuere sagittis nec, convallis sit amet nisl. Maecenas placerat, lectus eu malesuada mollis, sem massa interdum sapien, eu ornare ex risus volutpat ex.</p>
+                <img><img><img>
+            </div>
+            <div class="card6">
+                <h3>Money Maker</h3>
+                <p>Maecenas vulputate a tellus in eleifend. Morbi hendrerit, sapien ut suscipit laoreet, enim nulla malesuada dolor, vel sodales ante felis id elit. </p>
+                <img><img><img>
+            </div>
+
+        </div>
+        <div class = "announcements">
+            <h2>Announcements</h2>
+            <div class="announcement1">
+                <h5>Site Maintenance</h5>
+                <p>Nulla nec turpis sit amet enim imperdiet eleifend. Etiam et risus quis eros dictum posuere. Sed fringilla ex ac pellentesque gravida.</p>
+            </div>
+            <div class="announcement2">
+                <h5>Community Share Day</h5>
+                <p> Fusce vitae arcu id augue rutrum luctus eget volutpat velit. Nulla at turpis at sem finibus condimentum.</p>
+            </div>
+            <div class="announcement3">
+                <h5>Updated Priavcy Policy</h5>
+                <p>Integer sollicitudin diam massa, nec vulputate erat sodales commodo. Etiam sollicitudin mi turpis, eu porta nibh tincidunt eget</p>
+            </div>
+
+        </div>
+        <div class = "trending">
+            <h2>Trending</h2>
+            <div class = "users">
+                <div class="user1">
+                 <img>
+                 <div class = username>
+                     <h6>@tegan</h6>
+                     <p>World Peace Builder</p>
+                 </div>   
+                </div>
+                <div class="user2">
+                    <img>
+                 <div class = username>
+                     <h6>@soph</h6>
+                     <p>Super Cool Project</p>
+                 </div>  
+                </div>
+                <div class="user3">
+                    <img>
+                 <div class = username>
+                     <h6>@mary</h6>
+                     <p>Life Changing App</p>
+                 </div>  
+                </div>
+                <div class="user4">
+                    <img>
+                 <div class = username>
+                     <h6>@niki</h6>
+                     <p>No Traffic Maker</p>
+                 </div>  
+                </div>
+            </div>
+        </div>
+    
+    
+</body>
+</html>
